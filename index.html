@@ -209,8 +209,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/09/22/test/" itemprop="url">
-                  test
+                <a class="post-title-link" href="/2016/09/24/Hexo+github、coding多平台部署pages/" itemprop="url">
+                  Hexo+github/coding多平台部署pages
                 </a>
               
             
@@ -223,8 +223,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-22T14:28:30+08:00" content="2016-09-22">
-              2016-09-22
+            <time itemprop="dateCreated" datetime="2016-09-24T15:21:39+08:00" content="2016-09-24">
+              2016-09-24
             </time>
           </span>
 
@@ -234,8 +234,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/09/22/test/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/22/test/" itemprop="commentsCount"></span>
+                <a href="/2016/09/24/Hexo+github、coding多平台部署pages/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/24/Hexo+github、coding多平台部署pages/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -260,108 +260,11 @@
       
         
           
-            
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/21/小小的测试/" itemprop="url">
-                  小小的测试
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-21T15:21:39+08:00" content="2016-09-21">
-              2016-09-21
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/09/21/小小的测试/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/21/小小的测试/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>当星宿都沉默</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=32507038&auto=1&height=66"></iframe>
+            <h3 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h3><p>软件准备：<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a>、<a href="https://git-scm.com/downloads/" target="_blank" rel="external">git</a><br>搭建步骤：<br>1.成功安装Node.js<br>2.hexo安装及站点文件生成（右键git bash）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">1.install Hexo with npm：</div><div class="line">npm install hexo-cli -g 全局安装Hexo</div><div class="line">2.init Hexo：</div><div class="line">hexo init blogdemo  初始化hexo、在打开git bash的目录自动创建名为blogdemo的文件夹，此为站点源文件</div><div class="line">3.install dependency packages:</div><div class="line">npm install 安装相应的node modules，否则无法使用Hexo Commands</div><div class="line">4.generate pages：</div><div class="line">hexo g 生成一套静态网页</div><div class="line">5.run in localhost：</div><div class="line">hexo s 执行成功，在本地可通过localhost:4000进行访问</div><div class="line">6.deploy pages：</div><div class="line">hexo d 发布网页到支持pages服务的代码托管平台（eg：github、coding）</div></pre></td></tr></table></figure></p>
+<p>以上过程若有疑问，移步<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>官网。<br>注：deploy成功的前提是<br>在github、coding创建项目；更改站点根目录（上文提到的blogdemo）下_config.yml文件，找到deploy这一项，修改如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo:</div><div class="line">      github: git@github.com:blog/libra.github.io.git</div><div class="line">      coding: git@git.coding.net:blog/libra.git</div><div class="line">以上设置，可同时发布到github、coding。建议用ssh方式以免每次deploy输入git账号密码。</div><div class="line">ssh-keygen -t rsa -C &quot;youremail&quot; 生成ssh公私钥；</div><div class="line">到coding、github添加ssh key（复制本地C:\Users\username\.ssh文件下的id_rsa.pub内容）；</div><div class="line">测试连接ssh -T &quot;git@github.com&quot;。</div><div class="line">ssh -T git@github.com  </div><div class="line">当输出Hi xxx ! You&apos;ve successfully authenticated,即成功连接。</div></pre></td></tr></table></figure></p>
+<p>关于Hexo主题，可移步<a href="http://www.zhihu.com/question/24422335" target="_blank" rel="external">知乎</a>、<a href="https://hexo.io/themes/" target="_blank" rel="external">Hexo themes</a>等网站。</p>
+<h3 id="Hexo站点文件备份"><a href="#Hexo站点文件备份" class="headerlink" title="Hexo站点文件备份"></a>Hexo站点文件备份</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">git init（若主题是通过git clone方式获取，须先删除主题目录下的.git文件，否则主题文件不会上传）</div><div class="line">git add .</div><div class="line">git commit -m &quot;init hexo&quot;</div><div class="line">git remote add origin https://git.oschina.net/libracas/hexo_backup.git</div><div class="line">git push -u origin master</div><div class="line">以上操作将站点文件备份至代码托管平台进行维护。</div></pre></td></tr></table></figure>
+<h3 id="绑定coding域名"><a href="#绑定coding域名" class="headerlink" title="绑定coding域名"></a>绑定coding域名</h3><p><a href="https://coding.net/help/doc/pages/index.html" target="_blank" rel="external">https://coding.net/help/doc/pages/index.html</a></p>
 
           
         
@@ -431,7 +334,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -441,7 +344,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
