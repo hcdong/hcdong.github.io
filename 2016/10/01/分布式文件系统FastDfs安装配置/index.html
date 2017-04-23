@@ -58,19 +58,16 @@
 
 
 
-<meta name="description" content="1.下载安装libfastcommon1234git clone https://github.com/happyfish100/libfastcommon.gitcd libfastcommon/./make.sh./make.sh install
-2.下载安装fastdfs12345wget https://github.com/happyfish100/fastdfs/archive/V5.">
+<meta name="description" content="1.下载安装libfastcommon1234git clone https://github.com/happyfish100/libfastcommon.gitcd libfastcommon/./make.sh./make.sh install">
 <meta property="og:type" content="article">
 <meta property="og:title" content="分布式文件系统FastDfs安装配置">
 <meta property="og:url" content="http://chengg.top/2016/10/01/分布式文件系统FastDfs安装配置/index.html">
 <meta property="og:site_name" content="当星宿都沉默">
-<meta property="og:description" content="1.下载安装libfastcommon1234git clone https://github.com/happyfish100/libfastcommon.gitcd libfastcommon/./make.sh./make.sh install
-2.下载安装fastdfs12345wget https://github.com/happyfish100/fastdfs/archive/V5.">
-<meta property="og:updated_time" content="2017-04-23T08:16:39.808Z">
+<meta property="og:description" content="1.下载安装libfastcommon1234git clone https://github.com/happyfish100/libfastcommon.gitcd libfastcommon/./make.sh./make.sh install">
+<meta property="og:updated_time" content="2017-04-23T08:36:12.654Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="分布式文件系统FastDfs安装配置">
-<meta name="twitter:description" content="1.下载安装libfastcommon1234git clone https://github.com/happyfish100/libfastcommon.gitcd libfastcommon/./make.sh./make.sh install
-2.下载安装fastdfs12345wget https://github.com/happyfish100/fastdfs/archive/V5.">
+<meta name="twitter:description" content="1.下载安装libfastcommon1234git clone https://github.com/happyfish100/libfastcommon.gitcd libfastcommon/./make.sh./make.sh install">
 
 
 
@@ -261,6 +258,7 @@
 
       
         <h1 id="1-下载安装libfastcommon"><a href="#1-下载安装libfastcommon" class="headerlink" title="1.下载安装libfastcommon"></a>1.下载安装libfastcommon</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/happyfish100/libfastcommon.git</div><div class="line">cd libfastcommon/</div><div class="line">./make.sh</div><div class="line">./make.sh install</div></pre></td></tr></table></figure>
+<a id="more"></a> 
 <h1 id="2-下载安装fastdfs"><a href="#2-下载安装fastdfs" class="headerlink" title="2.下载安装fastdfs"></a>2.下载安装fastdfs</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/happyfish100/fastdfs/archive/V5.05.tar.gz</div><div class="line">tar -zxvf V5.05.tar.gz</div><div class="line">cd V5.05</div><div class="line">./make.sh</div><div class="line">./make.sh install</div></pre></td></tr></table></figure>
 <h1 id="3-执行安装"><a href="#3-执行安装" class="headerlink" title="3.执行安装"></a>3.执行安装</h1><p>默认会安装到/usr/bin中，并在/etc/fdfs中添加三个配置文件。<br>修改配置文件，将三个文件的名字去掉sample.  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">tracker.conf 中修改：</div><div class="line">base_path=/usr/lgip_fastdfs/fastdfs-tracker-log #用于存放日志。</div><div class="line">storage.conf 中修改：</div><div class="line">base_path=/usr/lgip_fastdfs/fastdfs-storage-log #用于存放日志。</div><div class="line">store_path0=/usr/lgip_fastdfs/fastdfs-file-save #存放数据  </div><div class="line">tracker_server=192.168.20.35:22122   #指定tracker服务器地址。  </div><div class="line">client.conf 中同样要修改：  </div><div class="line">base_path=/usr/lgip_fastdfs/fastdfs-client-log #用于存放日志。  </div><div class="line">tracker_server=192.168.20.35:22122   #指定tracker 服务器地址。  </div><div class="line">启动tracker和storage：  </div><div class="line">/usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf （+restart为重启）  </div><div class="line">/usr/bin/fdfs_storaged /etc/fdfs/storage.conf （+restart为重启）</div><div class="line">ps -aux | grep fdfs #查看进程</div></pre></td></tr></table></figure>
