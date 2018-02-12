@@ -81,13 +81,13 @@
 
 <meta name="description" content="Docker官网的解释是：Docker是一家能够解决混合云中的每个应用的容器平台提供商。由于受到现有应用程序和基础架构的制约，同时日益多样化的云利用合理化，数据中心和应用程序体系结构，因此，当今企业面临着数字化转型的巨大压力。Docker实现了应用程序和基础架构与开发人员和IT运营商之间的真正独立性，充分发挥其潜力，并创建更好的协作和创新模式。简而言之，Docker是一种应用容器化交付的技术。可以">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Docker基本概念">
+<meta property="og:title" content="Docker基本概念初探">
 <meta property="og:url" content="http://chengg.top/2017/05/01/Docker基本概念初探/index.html">
 <meta property="og:site_name" content="CHENG's NOTES">
 <meta property="og:description" content="Docker官网的解释是：Docker是一家能够解决混合云中的每个应用的容器平台提供商。由于受到现有应用程序和基础架构的制约，同时日益多样化的云利用合理化，数据中心和应用程序体系结构，因此，当今企业面临着数字化转型的巨大压力。Docker实现了应用程序和基础架构与开发人员和IT运营商之间的真正独立性，充分发挥其潜力，并创建更好的协作和创新模式。简而言之，Docker是一种应用容器化交付的技术。可以">
-<meta property="og:updated_time" content="2018-02-12T07:17:34.966Z">
+<meta property="og:updated_time" content="2018-02-12T07:21:00.300Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Docker基本概念">
+<meta name="twitter:title" content="Docker基本概念初探">
 <meta name="twitter:description" content="Docker官网的解释是：Docker是一家能够解决混合云中的每个应用的容器平台提供商。由于受到现有应用程序和基础架构的制约，同时日益多样化的云利用合理化，数据中心和应用程序体系结构，因此，当今企业面临着数字化转型的巨大压力。Docker实现了应用程序和基础架构与开发人员和IT运营商之间的真正独立性，充分发挥其潜力，并创建更好的协作和创新模式。简而言之，Docker是一种应用容器化交付的技术。可以">
 
 
@@ -124,7 +124,7 @@
 
 
 
-  <title>Docker基本概念 | CHENG's NOTES</title>
+  <title>Docker基本概念初探 | CHENG's NOTES</title>
   
 
 
@@ -258,7 +258,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Docker基本概念</h1>
+          <h1 class="post-title" itemprop="name headline">Docker基本概念初探</h1>
         
 
         <div class="post-meta">
@@ -309,7 +309,7 @@
 
       
         <p>Docker官网的解释是：Docker是一家能够解决混合云中的每个应用的容器平台提供商。由于受到现有应用程序和基础架构的制约，同时日益多样化的云利用合理化，数据中心和应用程序体系结构，因此，当今企业面临着数字化转型的巨大压力。Docker实现了应用程序和基础架构与开发人员和IT运营商之间的真正独立性，充分发挥其潜力，并创建更好的协作和创新模式。简而言之，Docker是一种应用容器化交付的技术。可以做到“一次封装，任何平台都可以运行”。<br><a id="more"></a> </p>
-<h3 id="为什么使用Docker？"><a href="#为什么使用Docker？" class="headerlink" title="为什么使用Docker？"></a>为什么使用Docker？</h3><p>举个例子，工程师A正在服务器上安装各种乱七八糟应用运行所需要的环境、配置各种参数，而这时大佬又让A去另外两台服务器安装同样的环境。这时A很无奈，为什么一样繁琐的事情要做好几次，甚至中途还可能出现一些未知的错误。这样既费时间，又浪费人力。那么当A得知有Docker这种神器的存在，哈哈哈~~~大佬，别说两台，你来个成百上千台我也是轻轻松松出困境。得意得意得意<br>由此我们不难得出，如下结论：<br>1.Docker实质是一种高效而且轻量级的虚拟化解决方案；<br>2.Docker可以完全保证环境的一致性，迁移和扩展更轻松；<br>3.Dokcer可以定制应用镜像来实现快速持续集成、交付、部署；<br>4.Dokcer使应用管理变得更简单，并且实现了进程级别的隔离。</p>
+<h3 id="为什么使用Docker？"><a href="#为什么使用Docker？" class="headerlink" title="为什么使用Docker？"></a>为什么使用Docker？</h3><p>举个例子，工程师A正在服务器上安装各种乱七八糟应用运行所需要的环境、配置各种参数，而这时大佬又让A去另外两台服务器安装同样的环境。这时A很无奈，为什么一样繁琐的事情要做好几次，甚至中途还可能出现一些未知的错误。这样既费时间，又浪费人力。那么当A得知有Docker这种神器的存在，哈哈哈~~~这波操作就很666<br>由此我们不难得出，如下结论：<br>1.Docker实质是一种高效而且轻量级的虚拟化解决方案；<br>2.Docker可以完全保证环境的一致性，迁移和扩展更轻松；<br>3.Dokcer可以定制应用镜像来实现快速持续集成、交付、部署；<br>4.Dokcer使应用管理变得更简单，并且实现了进程级别的隔离。</p>
 <h3 id="Docker基本概念"><a href="#Docker基本概念" class="headerlink" title="Docker基本概念"></a>Docker基本概念</h3><p>1.仓库：<br>仓库用来保存镜像，可以理解为代码控制中的代码仓库。Dokcer仓库有公有和私有的概念，公有的Docker仓库是Dockerhub，私有库可根据实际需求在公司内部服务器进行搭建。<br>2.镜像：<br>Docker容器运行时的只读模板，是一个特殊的文件系统，除了提供容器运行时所需的程序、库、资源、配置等文件外，还包含了一些为运行时准备的一些配置参数（如匿名卷、环境变量、用户等）。镜像不包含任何动态数据，其内容在构建之后也不会被改变。<br>3.容器：<br>容器的实质就是进程，可以实现快速的创建、启动、停止、删除、暂停。一个Docker容器包含了所有的某个应用运行所需要的环境。容器进程运行于属于自己的独立的命名空间。每一个Docker容器都是从Docker镜像创建的运行实例。每一个Docker容器都是独立和安全的应用平台。</p>
 <p>以上三个基本概念，其实可以简单的理解为Docker的生命周期。首先我们需要从仓库中拉取镜像，然后运行镜像即启动了容器，在容器中我们可以安装应用运行所需要的第三方的任何软件工具，最终再次打包成镜像，提交到仓库以便后续使用。</p>
 
