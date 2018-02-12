@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="MockServer," />
+  <meta name="keywords" content="hexo," />
 
 
 
@@ -79,16 +79,16 @@
 
 
 
-<meta name="description" content="MockServer可以减少前端开发对后端的依赖，提高前端开发的效率，同时也利于团队的协作。RAP是阿里团队出的一款WEB接口管理工具，帮助开发人员更高效的管理接口文档，同时通过分析接口结构自动生成Mock数据、校验真实接口的正确性，使接口文档成为开发流程中的强依赖。RAP官网：http://rapapi.org/org/index.do">
+<meta name="description" content="Hexo是一个基于node.js的快速、简洁且高效的博客框架。Hexo使用Markdown或其他渲染引擎解析文章，在几秒内，即可利用主题生成静态网页。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用阿里RAP搭建前端Mock Server">
-<meta property="og:url" content="http://chengg.top/2017/04/09/使用阿里RAP搭建前端Mock Server/index.html">
+<meta property="og:title" content="Hexo多平台部署page">
+<meta property="og:url" content="http://chengg.top/2017/02/25/Hexo多平台部署page/index.html">
 <meta property="og:site_name" content="CHENG's NOTES">
-<meta property="og:description" content="MockServer可以减少前端开发对后端的依赖，提高前端开发的效率，同时也利于团队的协作。RAP是阿里团队出的一款WEB接口管理工具，帮助开发人员更高效的管理接口文档，同时通过分析接口结构自动生成Mock数据、校验真实接口的正确性，使接口文档成为开发流程中的强依赖。RAP官网：http://rapapi.org/org/index.do">
-<meta property="og:updated_time" content="2018-02-12T08:10:38.835Z">
+<meta property="og:description" content="Hexo是一个基于node.js的快速、简洁且高效的博客框架。Hexo使用Markdown或其他渲染引擎解析文章，在几秒内，即可利用主题生成静态网页。">
+<meta property="og:updated_time" content="2018-02-12T08:07:43.346Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用阿里RAP搭建前端Mock Server">
-<meta name="twitter:description" content="MockServer可以减少前端开发对后端的依赖，提高前端开发的效率，同时也利于团队的协作。RAP是阿里团队出的一款WEB接口管理工具，帮助开发人员更高效的管理接口文档，同时通过分析接口结构自动生成Mock数据、校验真实接口的正确性，使接口文档成为开发流程中的强依赖。RAP官网：http://rapapi.org/org/index.do">
+<meta name="twitter:title" content="Hexo多平台部署page">
+<meta name="twitter:description" content="Hexo是一个基于node.js的快速、简洁且高效的博客框架。Hexo使用Markdown或其他渲染引擎解析文章，在几秒内，即可利用主题生成静态网页。">
 
 
 
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://chengg.top/2017/04/09/使用阿里RAP搭建前端Mock Server/"/>
+  <link rel="canonical" href="http://chengg.top/2017/02/25/Hexo多平台部署page/"/>
 
 
 
 
 
-  <title>使用阿里RAP搭建前端Mock Server | CHENG's NOTES</title>
+  <title>Hexo多平台部署page | CHENG's NOTES</title>
   
 
 
@@ -241,7 +241,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://chengg.top/2017/04/09/使用阿里RAP搭建前端Mock Server/">
+    <link itemprop="mainEntityOfPage" href="http://chengg.top/2017/02/25/Hexo多平台部署page/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="一叶不知秋丶">
@@ -258,7 +258,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">使用阿里RAP搭建前端Mock Server</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo多平台部署page</h1>
         
 
         <div class="post-meta">
@@ -270,8 +270,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-09T15:21:39+08:00">
-                2017-04-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-25T15:21:39+08:00">
+                2017-02-25
               </time>
             
 
@@ -308,8 +308,13 @@
       
 
       
-        <p>MockServer可以减少前端开发对后端的依赖，提高前端开发的效率，同时也利于团队的协作。RAP是阿里团队出的一款WEB接口管理工具，帮助开发人员更高效的管理接口文档，同时通过分析接口结构自动生成Mock数据、校验真实接口的正确性，使接口文档成为开发流程中的强依赖。RAP官网：<a href="http://rapapi.org/org/index.do" target="_blank" rel="external">http://rapapi.org/org/index.do</a><br><a id="more"></a> </p>
-<p>为什么要使用RAP？<br>1.在实际开发中，前后端的协作往往存在一些不可避免的问题，影响工作效率；<br>2.RAP提供Mock服务，自动根据接口文档生成Mock接口，这些接口会自动生成模拟数据，支持复杂的生成逻辑；<br>3.面对需求不断变更或需求拿捏不定的客户，可以使用RAP模拟数据，前端快速对接，将其作为演示用途供客户参考，避免一些后台开发的无用功；<br>4.RAP提供团队管理，项目管理，可视化编辑，以及完善的版本控制；<br>5.Mock接口和实际接口的切换，仅一句js代码引用与否，十分方便；<br>6.接口先于开发，接口驱动开发，前后端开发互不干扰，互不依赖，能够更好的利于团队协作<br>RAP部署步骤：<br>1.下载RAP最新的war包。 <a href="https://github.com/thx/RAP/releases" target="_blank" rel="external">https://github.com/thx/RAP/releases</a><br>2.下载初始化sql脚本initialize.sql。<br><a href="https://github.com/thx/RAP/tree/release/src/main/resources/database" target="_blank" rel="external">https://github.com/thx/RAP/tree/release/src/main/resources/database</a><br>3.使用initialize.sql初始化数据库，数据库使用mysql。<br>4.修改war包中WEB-INF/classes/config.properties，数据库地址，用户名及密码。<br>5.下载redis（这里介绍在windows下安装）：<a href="https://github.com/MSOpenTech/redis/releases" target="_blank" rel="external">https://github.com/MSOpenTech/redis/releases</a><br>6.将成功下载的redis解压到任意磁盘目录，使用cmd命令行进入该目录，启动redis：redis-server.exe redis.windows.conf<br>7.启动tomcat，RAP部署完成：<br>具体使用见RAP用户手册：<a href="https://github.com/thx/RAP/wiki/user_manual_cn" target="_blank" rel="external">https://github.com/thx/RAP/wiki/user_manual_cn</a></p>
+        <p>Hexo是一个基于node.js的快速、简洁且高效的博客框架。Hexo使用Markdown或其他渲染引擎解析文章，在几秒内，即可利用主题生成静态网页。<br><a id="more"></a> </p>
+<h3 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h3><p>软件准备：<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a>、<a href="https://git-scm.com/downloads/" target="_blank" rel="external">git</a><br>搭建步骤：<br>1.成功安装Node.js<br>2.hexo安装及站点文件生成（右键git bash）： </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">1.install Hexo with npm：</div><div class="line">npm install hexo-cli -g 全局安装Hexo</div><div class="line">2.init Hexo：</div><div class="line">hexo init blogdemo  初始化hexo、在打开git bash的目录自动创建名为blogdemo的文件夹，此为站点源文件</div><div class="line">3.install dependency packages:</div><div class="line">npm install 安装相应的node modules，否则无法使用Hexo Commands</div><div class="line">4.generate pages：</div><div class="line">hexo g 生成一套静态网页</div><div class="line">5.run in localhost：</div><div class="line">hexo s 执行成功，在本地可通过localhost:4000进行访问</div><div class="line">6.deploy pages：</div><div class="line">hexo d 发布网页到支持pages服务的代码托管平台（eg：github、coding）</div></pre></td></tr></table></figure>
+<p>以上过程若有疑问，移步<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>官网。<br>注：deploy成功的前提是<br>在github、coding创建项目；更改站点根目录（上文提到的blogdemo）下_config.yml文件，找到deploy这一项，修改如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo:</div><div class="line">      github: git@github.com:blog/libra.github.io.git</div><div class="line">      coding: git@git.coding.net:blog/libra.git</div><div class="line">以上设置，可同时发布到github、coding。建议用ssh方式以免每次deploy输入git账号密码。</div><div class="line">ssh-keygen -t rsa -C &quot;youremail&quot; 生成ssh公私钥；</div><div class="line">到coding、github添加ssh key（复制本地C:\Users\username\.ssh文件下的id_rsa.pub内容）；</div><div class="line">测试连接ssh -T &quot;git@github.com&quot;。</div><div class="line">ssh -T git@github.com  </div><div class="line">当输出Hi xxx ! You&apos;ve successfully authenticated,即成功连接。</div></pre></td></tr></table></figure></p>
+<p>关于Hexo主题，可移步<a href="http://www.zhihu.com/question/24422335" target="_blank" rel="external">知乎</a>、<a href="https://hexo.io/themes/" target="_blank" rel="external">Hexo themes</a>等网站。</p>
+<h3 id="Hexo站点文件备份"><a href="#Hexo站点文件备份" class="headerlink" title="Hexo站点文件备份"></a>Hexo站点文件备份</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">git init（若主题是通过git clone方式获取，须先删除主题目录下的.git文件，否则主题文件不会上传）</div><div class="line">git add .</div><div class="line">git commit -m &quot;init hexo&quot;</div><div class="line">git remote add origin https://git.oschina.net/libracas/hexo_backup.git</div><div class="line">git push -u origin master</div><div class="line">以上操作将站点文件备份至代码托管平台进行维护。</div></pre></td></tr></table></figure>
+<h3 id="绑定coding域名"><a href="#绑定coding域名" class="headerlink" title="绑定coding域名"></a>绑定coding域名</h3><p><a href="https://coding.net/help/doc/pages/index.html" target="_blank" rel="external">https://coding.net/help/doc/pages/index.html</a></p>
 
       
     </div>
@@ -327,7 +332,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/MockServer/" rel="tag"># MockServer</a>
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
           
         </div>
       
@@ -340,18 +345,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/01/分布式文件系统FastDFS安装配置/" rel="next" title="分布式文件系统FastDFS安装配置">
-                <i class="fa fa-chevron-left"></i> 分布式文件系统FastDFS安装配置
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/05/01/Docker基本概念初探/" rel="prev" title="Docker基本概念初探">
-                Docker基本概念初探 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/03/01/分布式文件系统FastDFS安装配置/" rel="prev" title="分布式文件系统FastDFS安装配置">
+                分布式文件系统FastDFS安装配置 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -404,8 +405,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -460,6 +470,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo安装"><span class="nav-number">1.</span> <span class="nav-text">hexo安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo站点文件备份"><span class="nav-number">2.</span> <span class="nav-text">Hexo站点文件备份</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绑定coding域名"><span class="nav-number">3.</span> <span class="nav-text">绑定coding域名</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
